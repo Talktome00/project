@@ -1,0 +1,17 @@
+public class ArrayMaximum {
+    public static int findMaximum(int[] arr) {
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {5, 2, 8, 1, 9};
+        int maxValue = findMaximum(numbers);
+        System.out.println("The maximum element is: " + maxValue);
+    }
+}
